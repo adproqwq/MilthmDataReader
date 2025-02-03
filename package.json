@@ -8,6 +8,8 @@
   "type": "module",
   "author": "Adpro",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/adproqwq/MilthmDataReader#readme",
   "bugs": {
     "url": "https://github.com/adproqwq/MilthmDataReader/issues"
