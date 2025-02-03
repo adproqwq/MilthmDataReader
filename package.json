@@ -1,0 +1,44 @@
+{
+  "name": "@adpro/milthm-data-reader",
+  "version": "1.0.0",
+  "description": "基于 TypeScript 读取 Milthm 存档文件并获取分数，B20等",
+  "keywords": [
+    "Milthm"
+  ],
+  "type": "module",
+  "author": "Adpro",
+  "license": "MIT",
+  "homepage": "https://github.com/adproqwq/MilthmDataReader#readme",
+  "bugs": {
+    "url": "https://github.com/adproqwq/MilthmDataReader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adproqwq/MilthmDataReader.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc --noEmit ./src/test.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "./dist"
+  ],
+  "dependencies": {
+    "@types/node": "22.13.0",
+    "json5": "2.2.3",
+    "typescript": "5.7.3"
+  },
+  "volta": {
+    "node": "22.12.0",
+    "pnpm": "9.15.5"
+  },
+  "packageManager": "pnpm@9.15.5",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
