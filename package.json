@@ -20,7 +20,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "tsc --noEmit ./src/test.ts"
+    "getVersion": "tsc --noEmit && tsx ./scripts/version.ts",
+    "syncNpmmirror": "tsc --noEmit && tsx ./scripts/syncNpmmirror.ts"
   },
   "publishConfig": {
     "access": "public",
@@ -31,8 +32,10 @@
   ],
   "dependencies": {
     "@types/node": "22.13.0",
-    "json5": "2.2.3",
     "typescript": "5.7.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
   },
   "volta": {
     "node": "22.12.0",

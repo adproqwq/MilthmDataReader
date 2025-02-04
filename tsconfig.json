@@ -7,5 +7,5 @@
     "strict": true,
     "moduleResolution": "Bundler"
   },
-  "include": ["./src"]
+  "include": ["./src", "./scripts"]
 }
