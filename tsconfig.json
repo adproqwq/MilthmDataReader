@@ -7,5 +7,6 @@
     "strict": true,
     "moduleResolution": "Bundler"
   },
-  "include": ["./src", "./scripts"]
+  "include": ["./src"],
+  "exclude": ["node_modules"]
 }
