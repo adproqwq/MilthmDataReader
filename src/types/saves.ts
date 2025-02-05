@@ -193,4 +193,14 @@ export interface ISave {
    * 存储了所有打过的歌的成绩
    */
   SongRecords: ISaveSongRecord[];
+
+  /**
+   * 玩家名
+   */
+  UserName: string;
+
+  /**
+   * 玩家UUID
+   */
+  UserUUID: string;
 };
