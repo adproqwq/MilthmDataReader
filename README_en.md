@@ -1,10 +1,10 @@
 # MilthmDataReader
 
-简体中文 | [English](./README_en.md)
+[简体中文](./README.md) | English
 
-基于 TypeScript 读取 `Milthm` 新版存档文件并获取分数，B20等
+Read `Milthm` save (v3.2.0 or above) and get score, B20, etc. based on TypeScript
 
-## 安装
+## Install
 
 ```shell
 npm install @adpro/milthm-data-reader # npm
@@ -12,17 +12,17 @@ npm install @adpro/milthm-data-reader # npm
 pnpm add @adpro/milthm-data-reader # pnpm
 ```
 
-## 使用
+## How to use
 
-本包仅使用 `Milthm` 新版存档中 `SongRecords` 字段内容，以下所有 `SongRecords` 均指该字段内容
+This package only use the value of `SongRecords` key in the `Milthm` save, all of the following `SongRecords` refers to this.
 
 ### Data
 
-获取存档歌曲信息
+Get songs data in the save.
 
 #### AllSongsData
 
-获取存档中所有歌曲的信息
+Get all songs data in the save.
 
 ```typescript
 import { Data } from '@adpro/milthm-data-reader';
@@ -34,7 +34,7 @@ console.log(data.AllSongsData);
 
 #### GetSpecificSongData
 
-获取存档中特定歌曲的信息
+Get specific song data in the save.
 
 ```typescript
 import { Data } from '@adpro/milthm-data-reader';
@@ -48,11 +48,11 @@ console.log(specificSongData);
 
 ### Reality
 
-与 `Reality` 有关的计算或功能
+The functions related to `Reality`.
 
 #### ScoreRank
 
-获取根据单曲`Reality`对所有歌曲所有难度的排序
+Get the rank of all difficulties of all songs, ranked by `Reality` of the single song.
 
 ```typescript
 import { Reality } from '@adpro/milthm-data-reader';
@@ -64,7 +64,7 @@ console.log(reality.ScoreRank);
 
 #### Reality
 
-获取更精确的`Reality`
+Get the more precise `Reality`.
 
 ```typescript
 import { Reality } from '@adpro/milthm-data-reader';
@@ -74,12 +74,12 @@ const reality = new Reality(SongRecords);
 console.log(reality.Reality);
 ```
 
-## 鸣谢
+## Acknowledgment
 
 [mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
 
-## 许可证
+## License
 
-本仓库签署`MIT`开源许可证，请在许可证限定范围内使用该项目
+This repository and package are under the `MIT` open source license, please use this repository and package in the limit of the license.
 
-附加条款：不得使用本项目源码进行商业活动
+Additional term: DO NOT USE THE CODE OF THIS REPOSITORY TO CONDUCT COMMERICAL ACTIVITIES.
