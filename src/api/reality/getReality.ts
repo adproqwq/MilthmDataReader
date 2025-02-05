@@ -1,7 +1,7 @@
 import getScoreRank from './getScoreRank';
-import { ISongRecord } from '../../types/songRecords';
+import { ISaveSongRecord } from '../../types/saves';
 
-export default (songRecords: ISongRecord[]): number => {
+export default (songRecords: ISaveSongRecord[]): number => {
   const scoreRank = getScoreRank(songRecords);
 
   if(scoreRank.length < 20){

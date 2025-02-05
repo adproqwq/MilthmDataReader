@@ -1,6 +1,6 @@
 import beatmap from '../../common/beatmap';
 import gradeMap from '../../common/gradeMap';
-import { ISongRecord } from '../../types/songRecords';
+import { ISaveSongRecord } from '../../types/saves';
 
 export interface ISpecificSongData {
   /**
@@ -34,7 +34,7 @@ export interface ISpecificSongData {
   BestScore: number;
 };
 
-export default (name: string, songRecords: ISongRecord[]): ISpecificSongData[] => {
+export default (name: string, songRecords: ISaveSongRecord[]): ISpecificSongData[] => {
   const result: ISpecificSongData[] = [];
 
   for(const songRecord of songRecords){

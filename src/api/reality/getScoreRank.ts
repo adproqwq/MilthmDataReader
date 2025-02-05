@@ -1,7 +1,7 @@
 import beatmap from '../../common/beatmap';
 import gradeMap from '../../common/gradeMap';
 import getSingleSongReality from './getSingleSongReality';
-import { ISongRecord } from '../../types/songRecords';
+import { ISaveSongRecord } from '../../types/saves';
 
 export interface IScoreRank {
   /**
@@ -40,7 +40,7 @@ export interface IScoreRank {
   reality: number;
 };
 
-export default (songRecords: ISongRecord[]): IScoreRank[] => {
+export default (songRecords: ISaveSongRecord[]): IScoreRank[] => {
   const scoreRank: IScoreRank[] = [];
 
   for(const songRecord of songRecords){

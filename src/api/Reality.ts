@@ -1,11 +1,11 @@
 import getScoreRank from './reality/getScoreRank';
 import getReality from './reality/getReality';
-import { ISongRecord } from '../types/songRecords';
+import { ISaveSongRecord } from '../types/saves';
 
 export default class {
-  songRecords: ISongRecord[];
+  songRecords: ISaveSongRecord[];
 
-  constructor(songRecords: ISongRecord[]){
+  constructor(songRecords: ISaveSongRecord[]){
     this.songRecords = songRecords;
   }
 
