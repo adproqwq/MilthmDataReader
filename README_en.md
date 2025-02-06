@@ -2,6 +2,8 @@
 
 [简体中文](./README.md) | English
 
+In case of conflict or ambiguity between different languages, the Simplified Chinese version shall prevail.
+
 Read `Milthm` save (v3.2.0 or above) and get score, B20, etc. based on TypeScript
 
 ## Install
@@ -74,9 +76,23 @@ const reality = new Reality(SongRecords);
 console.log(reality.Reality);
 ```
 
+## types
+
+The full types support for the saves.
+
+```typescript
+import type { ISave } from '@adpro/milthm-data-reader';
+```
+
+For more, please see [types/saves.ts](./src/types/saves.ts)
+
 ## Acknowledgment
 
 [mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
+
+## The project which use this package
+
+1. [adproqwq/h5-Milthm_save_view](https://github.com/adproqwq/h5-Milthm_save_view)
 
 ## License
 
