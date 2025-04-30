@@ -88,7 +88,8 @@ import type { ISave } from '@adpro/milthm-data-reader';
 
 ## 鸣谢
 
-[mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
+1. [mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
+2. [mkzi-nya/milthm-calculator-web](https://github.com/mkzi-nya/milthm-calculator-web)
 
 ## 使用本包的项目
 

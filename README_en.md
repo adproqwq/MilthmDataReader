@@ -88,7 +88,8 @@ For more, please see [types/saves.ts](./src/types/saves.ts)
 
 ## Acknowledgment
 
-[mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
+1. [mkzi-nya/Milthm_Score-Checker_python](https://github.com/mkzi-nya/Milthm_Score-Checker_python)
+2. [mkzi-nya/milthm-calculator-web](https://github.com/mkzi-nya/milthm-calculator-web)
 
 ## The project which use this package
 
