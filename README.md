@@ -78,7 +78,7 @@ console.log(reality.Reality);
 
 ## constants
 
-所有谱面所有难度定数
+除去剧情铺面之外所有谱面定数
 
 ```typescript
 import { beatmap } from '@adpro/milthm-data-reader';

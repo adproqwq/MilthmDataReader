@@ -76,6 +76,14 @@ const reality = new Reality(SongRecords);
 console.log(reality.Reality);
 ```
 
+## constants
+
+All constantsof all charts without special charts.
+
+```typescript
+import { beatmap } from '@adpro/milthm-data-reader';
+```
+
 ## types
 
 The full types support for the saves.
