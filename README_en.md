@@ -4,7 +4,7 @@
 
 In case of conflict or ambiguity between different languages, the Simplified Chinese version shall prevail.
 
-Read `Milthm` save (v3.2.0 or above) and get score, B20, etc. based on TypeScript
+Read `Milthm` save (v3.8.0 or above) and get score, B20, etc. based on TypeScript
 
 ## Install
 
