@@ -178,6 +178,8 @@ export interface ISave {
   /**
    * 存档版本号
    *
+   * @description 3.8为2
+   *
    * @example 1
    */
   SaveVersionCode: number;
