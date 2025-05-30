@@ -76,6 +76,14 @@ const reality = new Reality(SongRecords);
 console.log(reality.Reality);
 ```
 
+## constants
+
+所有谱面所有难度定数
+
+```typescript
+import { beatmap } from '@adpro/milthm-data-reader';
+```
+
 ## types
 
 对于新版存档文件内容的完整 type 支持

@@ -8,6 +8,7 @@ import {
   ISaveMarkRecord,
   ISaveSongRecord,
 } from './types/saves';
+import beatmap from './common/beatmap';
 
 export {
   Data,
@@ -21,4 +22,8 @@ export {
   ISaveImmerseProgresse,
   ISaveMarkRecord,
   ISaveSongRecord,
+};
+
+export {
+  beatmap,
 };
