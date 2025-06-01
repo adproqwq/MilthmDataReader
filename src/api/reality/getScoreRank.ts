@@ -61,7 +61,7 @@ export default (songRecords: ISaveSongRecord[]): IScoreRank[] => {
       BestAccuracy: songRecord.BestAccuracy,
       BestScore: songRecord.BestScore,
       BestLevel: grade,
-      reality: Math.max(getSingleSongReality(songRecord.BestScore) + songConstant, 0),
+      reality: Math.max(getSingleSongReality(songRecord.BestScore, songConstant), 0),
     });
   }
 
