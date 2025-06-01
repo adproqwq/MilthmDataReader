@@ -1,5 +1,6 @@
 import getScoreRank from './reality/getScoreRank';
 import getReality from './reality/getReality';
+import getSingleSongAdvice from './reality/getSingleSongAdvice';
 import { ISaveSongRecord } from '../types/saves';
 
 export default class {
@@ -15,5 +16,9 @@ export default class {
 
   get ScoreRank(){
     return getScoreRank(this.songRecords);
+  }
+
+  get Advice(){
+    return getSingleSongAdvice(this.songRecords);
   }
 };

@@ -40,6 +40,14 @@ export interface IScoreRank {
   reality: number;
 };
 
+export const sortScoreRank = (scoreRank: IScoreRank[]): IScoreRank[] => {
+  return scoreRank.sort((a, b) => {
+    if(a.reality < b.reality) return 1;
+    else if(a.reality > b.reality) return -1;
+    else return 0;
+  });
+};
+
 export default (songRecords: ISaveSongRecord[]): IScoreRank[] => {
   const scoreRank: IScoreRank[] = [];
 
@@ -65,9 +73,5 @@ export default (songRecords: ISaveSongRecord[]): IScoreRank[] => {
     });
   }
 
-  return scoreRank.sort((a, b) => {
-    if(a.reality < b.reality) return 1;
-    else if(a.reality > b.reality) return -1;
-    else return 0;
-  });
+  return sortScoreRank(scoreRank);
 };

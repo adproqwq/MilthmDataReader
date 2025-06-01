@@ -1,6 +1,6 @@
 import Data from './api/Data';
 import Reality from './api/Reality';
-import {
+import type {
   ISave,
   ISaveAgreement,
   ISaveChapterSelectPreference,
