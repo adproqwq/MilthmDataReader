@@ -76,6 +76,18 @@ const reality = new Reality(SongRecords);
 console.log(reality.Reality);
 ```
 
+#### Advice
+
+获取推分建议
+
+```typescript
+import { Reality } from '@adpro/milthm-data-reader';
+
+const reality = new Reality(SongRecords);
+
+console.log(reality.Advice);
+```
+
 ## constants
 
 除去剧情铺面之外所有谱面定数
