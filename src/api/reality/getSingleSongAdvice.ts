@@ -86,7 +86,7 @@ export default (songRecords: ISaveSongRecord[]): ISingleSongAdvice[] => {
         copiedSongRank[i].modified = true;
 
         advice.push({
-          targetScore: 1005000,
+          targetScore: copiedSongRank[i].BestScore >= 1005000 ? 1010000 : 1005000,
           increasedRank: findObjectIndexByKey(sortScoreRank(copiedSongRank) as ICopiedScoreRank[]) + 1,
         });
       }
