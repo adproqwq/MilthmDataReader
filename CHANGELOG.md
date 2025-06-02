@@ -1,2 +1,2 @@
-1. 新增推分建议
-2. 调整getSingleSongReality入参
+1. 优化单曲Reality转分数逻辑
+2. 调整建议返回值类型
