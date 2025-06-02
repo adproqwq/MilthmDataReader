@@ -3,7 +3,8 @@ export default (singleSongReality: number, constant: number, originScore: number
   singleSongReality = singleSongReality > constant + 1 ? constant + 1 : singleSongReality;
 
   if(originScore >= 1005000) return originScore;
-  if(singleSongReality === constant + 1) return 1005000;
+  // 当单曲Reality小于理论单曲Reality，且给定的单曲Reality又超出1004999对应的单曲Reality时也需返回1005000
+  if(singleSongReality >= constant + 1.4 / (Math.exp(-3.65) + 1) - 0.4 && singleSongReality <= constant + 1) return 1005000;
 
   // 判断单曲Reality在分数段[995000, 1005000)对应函数中是否有解
   // 函数r(s,c),s∈[995000,1005000)的值域为r∈[c + 0.3,1.4 / (e^-3.65 + 1) - 0.4 + c)

@@ -12,7 +12,7 @@ export interface ISingleSongAdvice {
   /**
    * 达到目标后的排名
    */
-  increasedRank: number | null;
+  increasedRank: number;
 };
 
 interface ICopiedScoreRank extends IScoreRank {
