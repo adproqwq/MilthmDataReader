@@ -31,12 +31,13 @@ export default (songRecords: ISaveSongRecord[]): ISingleSongAdvice[] => {
   const originScoreRank = getScoreRank(songRecords);
   const advice: ISingleSongAdvice[] = [];
   const lastB20Index = originScoreRank.length >= 20 ? 19 : originScoreRank.length - 1;
+  const offset = originScoreRank.length >= 20 ? 0.2 : originScoreRank.length * 0.01;
 
   for(let i = 0; i < originScoreRank.length; i++){
     const rankItem = originScoreRank[i];
 
     if(i <= 19){
-      const targetScore = singleSongReality2Score(rankItem.reality + 0.2, rankItem.constant, rankItem.BestScore);
+      const targetScore = singleSongReality2Score(rankItem.reality + offset, rankItem.constant, rankItem.BestScore);
 
       if(targetScore === rankItem.BestScore){
         advice.push({
@@ -66,7 +67,7 @@ export default (songRecords: ISaveSongRecord[]): ISingleSongAdvice[] => {
         copiedSongRank[i].reality = getSingleSongReality(copiedSongRank[i].BestScore, copiedSongRank[i].constant);
         copiedSongRank[lastB20Index] = copiedSongRank[i];
 
-        const targetScore = singleSongReality2Score(copiedSongRank[lastB20Index].reality + 0.2, copiedSongRank[lastB20Index].constant, copiedSongRank[lastB20Index].BestScore);
+        const targetScore = singleSongReality2Score(copiedSongRank[lastB20Index].reality + offset, copiedSongRank[lastB20Index].constant, copiedSongRank[lastB20Index].BestScore);
 
         copiedSongRank[lastB20Index].BestScore = targetScore;
         copiedSongRank[lastB20Index].reality = getSingleSongReality(targetScore, copiedSongRank[i].constant);
