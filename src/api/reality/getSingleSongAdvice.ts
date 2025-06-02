@@ -81,7 +81,7 @@ export default (songRecords: ISaveSongRecord[]): ISingleSongAdvice[] => {
       else{
         const copiedSongRank: ICopiedScoreRank[] = structuredClone(originScoreRank);
 
-        copiedSongRank[i].BestScore = copiedSongRank[i].BestScore >= 1005000 ? 1010000 : 1005000;
+        copiedSongRank[i].BestScore = 1005000;
         copiedSongRank[i].reality = copiedSongRank[i].constant + 1;
         copiedSongRank[i].modified = true;
 
