@@ -110,7 +110,7 @@ export interface ISaveSongRecord {
   /**
    * 当前难度下取得的最高等级
    *
-   * 0为R 1为紫S 2为青S 3为白S……依次类推
+   * 0为R，1为紫月，2为紫S，3为蓝月，4为青S，5为白月，6为白S，7为A，8为B，9为C，10为F
    *
    * @example 1
    */

@@ -88,6 +88,18 @@ const reality = new Reality(SongRecords);
 console.log(reality.Advice);
 ```
 
+#### Star
+
+Get star level.
+
+```typescript
+import { Reality } from '@adpro/milthm-data-reader';
+
+const reality = new Reality(SongRecords);
+
+console.log(reality.Star);
+```
+
 ## constants
 
 All constantsof all charts without special charts.

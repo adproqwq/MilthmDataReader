@@ -88,6 +88,18 @@ const reality = new Reality(SongRecords);
 console.log(reality.Advice);
 ```
 
+#### Star
+
+获取星级
+
+```typescript
+import { Reality } from '@adpro/milthm-data-reader';
+
+const reality = new Reality(SongRecords);
+
+console.log(reality.Star);
+```
+
 ## constants
 
 除去剧情铺面之外所有谱面定数
