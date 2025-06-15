@@ -31,11 +31,11 @@
     "./dist"
   ],
   "dependencies": {
-    "@types/node": "22.15.29",
+    "@types/node": "24.0.1",
     "typescript": "5.8.3"
   },
   "devDependencies": {
-    "tsx": "^4.19.4"
+    "tsx": "^4.20.3"
   },
   "volta": {
     "node": "22.12.0",
