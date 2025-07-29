@@ -234,4 +234,7 @@ export default new Map<string, IBeatmap>([
   ['29474d2e-9786-486e-87b1-5dfa5a13552d', { constant: 10.3, category: 'CB', name: 'Chartreuse Green' }],
   ['8cc988d8-e495-4560-9061-ad5f01e1cb56', { constant: 7.7, category: 'SK', name: 'Chartreuse Green' }],
   ['a58d30a8-8df9-448c-8055-77674839747f', { constant: 2.0, category: 'DZ', name: 'Chartreuse Green' }],
+  ['9a22efa6-85b5-41df-99d9-9242a84201a3', { constant: 11.1, category: 'CB', name: 'Aleph-0' }],
+  ['5793b823-c109-4cee-8b8f-1eb15dd7d232', { constant: 5.5, category: 'SK', name: 'Aleph-0' }],
+  ['1dbe0fd0-e089-4a80-8ae4-620d093e9b71', { constant: 2.0, category: 'DZ', name: 'Aleph-0' }],
 ]);
