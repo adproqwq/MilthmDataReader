@@ -1,5 +1,5 @@
 import beatmap from '../../common/beatmap';
-import gradeMap from '../../common/gradeMap';
+import getGrade from '../../common/getGrade';
 import getSingleSongReality from './getSingleSongReality';
 import { ISaveSongRecord } from '../../types/saves';
 
@@ -60,7 +60,7 @@ export default (songRecords: ISaveSongRecord[]): IScoreRank[] => {
     const songName = songInfo.name;
     const songCategory = songInfo.category;
     const songConstant = songInfo.constant;
-    const grade = gradeMap.get(songRecord.BestLevel)!;
+    const grade = getGrade(songRecord.BestLevel, songRecord.AchievedStatus);
 
     scoreRank.push({
       name: songName,

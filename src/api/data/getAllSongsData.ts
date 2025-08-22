@@ -1,5 +1,5 @@
 import beatmap from '../../common/beatmap';
-import getGrade from './getGrade';
+import getGrade from '../../common/getGrade';
 import type { ISaveSongRecord } from '../../types/saves';
 
 export interface IAllSongsData {

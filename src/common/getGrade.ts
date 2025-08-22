@@ -1,4 +1,4 @@
-import gradeMap from '../../common/gradeMap';
+import gradeMap from './gradeMap';
 
 export default (bestLevel: number, achivedStatus: number[]): string => {
   if(bestLevel === 0 || bestLevel === 6) return gradeMap.get(bestLevel.toString())!;
