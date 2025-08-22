@@ -1,6 +1,6 @@
 import beatmap from '../../common/beatmap';
-import gradeMap from '../../common/gradeMap';
-import { ISaveSongRecord } from '../../types/saves';
+import getGrade from './getGrade';
+import type { ISaveSongRecord } from '../../types/saves';
 
 export interface IAllSongsData {
   /**
@@ -46,7 +46,7 @@ export default (songRecords: ISaveSongRecord[]): IAllSongsData[] => {
     const songName = songInfo.name;
     const songCategory = songInfo.category;
     const songConstant = songInfo.constant;
-    const grade = gradeMap.get(songRecord.BestLevel)!;
+    const grade = getGrade(songRecord.BestLevel, songRecord.AchievedStatus);
 
     result.push({
       name: songName,
